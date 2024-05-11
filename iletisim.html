@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <!-- Bootstrap CSS dosyası -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="container mt-5">
+        <h2>İletişim Formu</h2>
+        <form @submit.prevent="submitForm">
+            <div class="form-group">
+                <label for="name">Adınız:</label>
+                <input type="text" class="form-control" v-model="formData.name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" class="form-control" v-model="formData.email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız:</label>
+                <textarea class="form-control" v-model="formData.message" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" @click="clearForm">Temizle</button>
+            <button type="submit" class="btn btn-success">Gönder</button>
+        </form>
+    </div>
+
+    <!-- Vue.js JavaScript dosyası -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                formData: {
+                    name: '',
+                    email: '',
+                    message: ''
+                }
+            },
+            methods: {
+                clearForm() {
+                    this.formData.name = '';
+                    this.formData.email = '';
+                    this.formData.message = '';
+                },
+                submitForm() {
+                    // Form kontrol işlemleri
+                    if (!this.formData.name || !this.formData.email || !this.formData.message) {
+                        alert('Lütfen tüm alanları doldurunuz.');
+                        return;
+                    }
+
+                    if (!this.validateEmail(this.formData.email)) {
+                        alert('Geçerli bir e-posta adresi giriniz.');
+                        return;
+                    }
+
+                    // Form verilerini başka bir sayfada göster
+                    localStorage.setItem('formData', JSON.stringify(this.formData));
+                    window.location.href = 'form_info_vue.html';
+                },
+                validateEmail(email) {
+                    var re = /\S+@\S+\.\S+/;
+                    return re.test(email);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
