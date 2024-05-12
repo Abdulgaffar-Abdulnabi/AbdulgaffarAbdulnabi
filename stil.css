@@ -1,0 +1,74 @@
+/* stil.css */
+
+/* Genel stil tanımlamaları */
+body  {
+
+#sayfa{ background-color: #f8f9fa;}
+
+  #sayfa1{
+  background-color: #f8f9fa;
+
+.container {
+  margin-top: 50px;
+}
+h1 {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}  
+  }
+  #sayfa2{ background-color: #f8f9fa;
+
+    .container1 {
+      margin-top: 0px;
+    }
+    h1 {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0; /* Yukarı-aşağı 20px boşluk bırakır */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Footer kutusunun yüksekliğini 50px olarak ayarlar */
+    }}
+  #sayfa3{
+    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  margin-top: 0;
+}
+.container2 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.description {
+  margin-top: 20px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}}}
