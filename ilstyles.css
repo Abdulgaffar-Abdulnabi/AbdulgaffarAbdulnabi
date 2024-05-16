@@ -1,0 +1,49 @@
+/* Arka plan rengi */
+body {
+    background-color: #f0f0f0; /* İstediğiniz rengi buraya yazın */
+}
+
+/* Görünümü daha iyi yapmak için diğer CSS kuralları */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.unsplashimage {
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+/* Arka plan rengi */
+body {
+    background-color: #f0f0f0; /* İstediğiniz rengi buraya yazın */
+}
+
+/* Buton stilini güncelledik */
+#fetchButton {
+    display: block;
+    margin: 20px auto; /* Sayfanın ortasına konumlandırmak için */
+    padding: 15px 30px; /* Buton boyutunu artırdık */
+    font-size: 18px; /* Yazı boyutunu artırdık */
+    background-color: #4CAF50; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none;
+    border-radius: 5px; /* Kenar yuvarlatma */
+    cursor: pointer;
+}
+
+#fetchButton:hover {
+    background-color: #45a049; /* Hover efekti için arka plan rengini değiştirdik */
+}
+/*fotoğraf Ekran boyutunu ayarladık */
+#image {
+    max-width: 1000px; /* Maksimum genişlik 800 piksel */
+    height: auto; /* Orantılı olarak yüksekliği otomatik ayarladık */
+    display: block;
+    margin: 0 auto; /* Fotoğrafı merkezlemek için */
+}

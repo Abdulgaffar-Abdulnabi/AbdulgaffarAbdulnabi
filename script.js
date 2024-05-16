@@ -1,37 +1,13 @@
-new Vue({
-    el: '#app',
-    data: {
-        formData: {
-            name: '',
-            email: '',
-            message: ''
-        }
-    },
-    methods: {
-        clearForm() {
-            this.formData.name = '';
-            this.formData.email = '';
-            this.formData.message = '';
-        },
-        submitForm() {
-            // Form kontrol işlemleri
-            if (!this.formData.name || !this.formData.email || !this.formData.message) {
-                alert('Lütfen tüm alanları doldurunuz.');
-                return;
-            }
-
-            if (!this.validateEmail(this.formData.email)) {
-                alert('Geçerli bir e-posta adresi giriniz.');
-                return;
-            }
-
-            // Form verilerini başka bir sayfada göster
-            localStorage.setItem('formData', JSON.stringify(this.formData));
-            window.location.href = 'form_info_vue.html';
-        },
-        validateEmail(email) {
-            var re = /\S+@\S+\.\S+/;
-            return re.test(email);
-        }
-    }
-});
+document.addEventListener("DOMContentLoaded", function() {
+    var buttons = document.querySelectorAll(".btn");
+  
+    buttons.forEach(function(button) {
+      button.addEventListener("mouseenter", function() {
+        button.style.borderColor = "#ff0000"; // Butonun kenarlık rengini kırmızı yap
+      });
+  
+      button.addEventListener("mouseleave", function() {
+        button.style.borderColor = "#007bff"; // Butonun kenarlık rengini mavi yap
+      });
+    });
+  });
