@@ -1,0 +1,18 @@
+.container {
+    width: 100%; /* Sayfa genişliğine tam olarak yayılsın */
+    max-width: 4000px; /* Maksimum genişlik belirleyin, isteğe bağlı */
+  }
+h1{font-size: 50px;}
+h2{font-size: 40px;}
+h4{font-size: 30px;}
+p{font-size: 25px;}
+  .center {
+    display: block; /* Resmi blok element olarak ayarlayın */
+    margin: 0 auto; /* Sayfa genişliğinde ortalamak için otomatik marj kullanın */
+    max-width: 100%; /* Resmin maksimum genişliğini belirleyin */
+    height: auto; /* Yüksekliği otomatik ayarlayın */
+  }
+
+  .description {
+    font-size: 1.2em; /* Yazı tipi boyutunu artırın */
+  }

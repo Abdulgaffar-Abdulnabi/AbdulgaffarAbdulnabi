@@ -1,0 +1,21 @@
+/* Gerekli CSS dosyalarını buraya ekleyebilirsiniz */
+.container {
+    width: 100%; /* Sayfa genişliğine tam olarak yayılsın */
+   
+    max-width: 2000px; /* Maksimum genişlik belirleyin, isteğe bağlı */
+  }
+
+  /* Yazıları daha büyük yapmak için */
+  h1{font-size: 60px;} h2{font-size: 50px;} p {
+    font-size: 40px;
+  }
+  li{
+    font-size: 30px;
+  }
+
+  /* Slider'daki fotoğrafların boyutlarını uyumlu hale getirmek için */
+  .carousel-item img {
+
+    max-height: 600px; /* Maksimum yükseklik belirleyin */
+    width: 500px; /* Genişliği otomatik ayarlayın */
+  }

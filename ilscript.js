@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageElement = document.getElementById('image');
     const apiKey = 'Client-ID XnltkxbGWMu9faq7RXUgBRslj3rUUM5a9cP0_k5_0zo';
 
-    fetchButton.addEventListener('click', function () {
+    fetchButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Butonun varsayılan davranışını engelliyoruz
+
         fetchRandomImage();
     });
 

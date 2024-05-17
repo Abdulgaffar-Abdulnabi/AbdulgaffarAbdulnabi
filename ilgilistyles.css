@@ -1,0 +1,62 @@
+/* Arka plan rengi ve genel stil ayarlamaları */
+body {
+    background-color: #f0f0f0; /* Arka plan rengi */
+    font-family: Arial, sans-serif; /* Font ayarı */
+    margin: 0; /* Sayfanın kenar boşluğunu sıfırla */
+    padding: 0; /* Sayfanın iç boşluğunu sıfırla */
+    display: flex;
+    flex-direction: column; /* İçeriği dikey yönde sırala */
+    justify-content: center; /* Öğeleri dikeyde ortala */
+    align-items: center; /* Öğeleri yatayda ortala */
+    height: 100vh; /* Ekran yüksekliğinin tamamı kadar uzat */
+}
+
+.container {
+    text-align: center; /* İçerikleri yatayda ortala */
+    padding: 20px; /* Kenarlarda boşluk bırak */
+}
+
+.unsplashimage {
+    text-align: center; /* Resmi yatayda ortala */
+    width: 100%; /* Resmin container içinde genişliği */
+    max-width: 600px; /* Maksimum genişlik ayarı */
+    max-height: 600px;
+    height: auto; /* Yükseklik otomatik olarak ayarlanacak */
+    overflow: hidden; /* Taşan kısımları gizle */
+}
+
+#image {
+    width: 100%; /* Resmin genişliği */
+    height: 100%; /* Resmin yüksekliği */
+    object-fit: cover; /* Resmi container'a sığdır, taşan kısımları kırp */
+}
+
+#fetchButton {
+    position: absolute; /* Mutlak pozisyon */
+    right:  45%;/*buton konumu*/
+    top: 20px; /* Üstten 20 piksel mesafe */
+    padding: 10px 20px; /* Buton boyutunu artırdık */
+    font-size: 18px; /* Yazı boyutunu artırdık */
+    background-color: #4CAF50; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none;
+    border-radius: 20px; /* Kenar yuvarlatma */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Arkaplan rengi geçiş efekti */
+}
+
+#fetchButton:hover {
+    background-color: #45a049; /* Hover efekti için arka plan rengini değiştirdik */
+}
+
+/* Mobil cihazlar için ek ayarlamalar */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Kenarlarda daha az boşluk bırak */
+    }
+
+    #fetchButton {
+        top: 10px; /* Mobil cihazlarda daha üste çek */
+    }
+}
+

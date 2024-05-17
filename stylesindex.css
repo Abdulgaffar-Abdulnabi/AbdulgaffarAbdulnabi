@@ -1,0 +1,75 @@
+/* styles.css */
+  .container {
+    width: 100%; /* Sayfa genişliğine tam olarak yayılsın */
+    max-width: 2000px; /* Maksimum genişlik belirleyin, isteğe bağlı */
+}
+
+.row {
+    margin-right: -15px; /* Bootstrap sınıfından kaynaklanan margin-right değerini sıfırlayın */
+    margin-left: -15px; /* Bootstrap sınıfından kaynaklanan margin-left değerini sıfırlayın */
+}
+
+.col-md-6 {
+    flex: 0 0 50%; /* Yatay alanda yarı genişlik */
+    max-width: 100%; /* Maksimum genişlik */
+}
+  .mt-md-4 {
+    margin-top: 100rem; /* İstenilen miktarda yukarı kaydırma */
+  }
+  .container {
+    margin-top: 30px; /* İstenilen mesafe değeri */
+  }
+ /* Navbar rengi ve linklerin stili */
+ .navbar {
+  background-color: #ecd316; /* Navbar rengi */
+}
+.navbar .navbar-nav .nav-link {
+  color: #f00a98; /* Linklerin rengi */
+  margin-right: 10px; /* Linkler arasındaki boşluk */
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #d38c09; /* Hover rengi */
+  background-color: #07ecca; /* Hover arka plan rengi */
+}
+/* Buton rengi ve stili */
+.navbar-toggler {
+  background-color: transparent;
+  border: 5px solid #1a1919;
+  color: #152f52;
+}
+.navbar-toggler:hover {
+  background-color: #4b0808;
+  color: #007bff;
+}
+.navbar-toggler-icon {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/60/60794.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+h1 {
+  font-size: 50px;
+}
+h5 {
+  font-size: 30px;
+}
+h2, h3, h4, h6 {
+  font-size: 40px; /* İstediğiniz büyüklükte font boyutu */
+}
+a {
+  font-size: 25px;
+}
+p {
+  font-size: 30px; /* İstediğiniz büyüklükte paragraf font boyutu */
+}
+/* Görsellerin boyutlandırılması */
+.custom-img {
+  height: 300px; /* İstediğiniz yükseklik */
+  width: 100%; /* Konteyner genişliğine uyum sağlar */
+  object-fit: cover; /* Görsellerin kesilmesini önler ve konteyner boyutuna uydurur */
+}
+/* Fotoğraflar arasında boşluk olmaması için */
+.img-fluid {
+  padding: 0; /* İç boşlukları kaldırır */
+  margin: 0; /* Dış boşlukları kaldırır */
+}
